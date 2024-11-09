@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#chat-container {
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #25d366;
+    color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+#contact-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#contact-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.message.sent {
+    background-color: #dcf8c6;
+    align-self: flex-end; /* Alínea a la derecha */
+    text-align: right;
+    border-top-right-radius: 0; /* Esquina superior derecha */
+}
+
+.message.received {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    align-self: flex-start; /* Alínea a la izquierda */
+    text-align: left;
+    border-top-left-radius: 0; /* Esquina superior izquierda */
+}
+
+#input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
