@@ -14,7 +14,7 @@ function sendMessage() {
         // Aquí puedes llamar a la API de ChatGPT y manejar la respuesta
         // Simularemos una respuesta de ChatGPT por ahora
         setTimeout(() => {
-            addMessage('Esta es una respuesta de ChatGPT', 'received');
+            addMessage('Esta es una respuesta de Luzio', 'received');
         }, 1000);
     }
 }
