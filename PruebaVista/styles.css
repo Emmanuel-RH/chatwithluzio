@@ -6,6 +6,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #chat-container {
@@ -29,9 +31,9 @@ body {
 }
 
 #home-button {
-    position: fixed;
-    top: 10px;
-    left: 10px;
+    position: absolute;
+    top: 75px;
+    left: 200px;
     background-color: #25d366;
     color: white;
     border: none;
