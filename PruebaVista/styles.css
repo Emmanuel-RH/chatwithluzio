@@ -31,9 +31,9 @@ body {
 }
 
 #home-button {
-    position: fixed;
-    top: 75px;
-    left: 200px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
     background-color: #25d366;
     color: white;
     border: none;
