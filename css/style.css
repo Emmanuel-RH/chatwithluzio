@@ -829,4 +829,11 @@ a:focus {
 .footer_section p a {
   color: inherit;
 }
+
+@media (max-width: 768px) {
+  .service_container .row .col-md-4 .box .img-box {
+    height: 120px;  /* Ajusta la altura para pantallas más pequeñas */
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
