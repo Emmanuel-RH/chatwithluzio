@@ -2,22 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>LuzioBot Chat</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="https://github.com/Emmanuel-RH/chatwithluzio/blob/main/images/ChatWithLuzio-Logo.png?raw=true" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integración GPT</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Consultas GPT</h1>
     <div id="chat-container">
-        <div id="header">
-            <img src="https://github.com/Emmanuel-RH/chatwithluzio/blob/main/Imagenes/LuzioChat.jpg?raw=true" alt="Foto de Luzio" id="contact-photo">
-            <span id="contact-name">LuzioBot</span>
-        </div>
-        <div id="messages"></div>
-        <div id="input-container">
-            <input type="text" id="message-input" placeholder="Escribe un mensaje...">
-            <button id="send-button">Enviar</button>
-        </div>
+        <textarea id="user-input" placeholder="Escribe tu pregunta aquí..."></textarea>
+        <button onclick="enviarPregunta()">Enviar</button>
+        <div id="respuesta"></div>
     </div>
     <script src="script.js"></script>
 </body>
